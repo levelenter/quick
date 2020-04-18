@@ -8,7 +8,6 @@
     "prod:ts": "./node_modules/.bin/tsc ",
     "prod:sv_pm2": "pm2 start config/pm2sv.config.json --env production",
     "prod:sig_pm2": "pm2 start config/pm2sig.config.json --env production",
-    "start": "export NODE_ENV=production; ./node_modules/.bin/ts-node ./index.ts",
     "dev:sv": "export NODE_ENV=development; ./node_modules/.bin/ts-node ./server.ts -watch view ",
     "dev:sig": "export NODE_ENV=development; ./node_modules/.bin/ts-node ./signaling.ts -watch view ",
     "test": "./node_modules/.bin/jest --watch"
