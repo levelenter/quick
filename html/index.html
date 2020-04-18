@@ -36,9 +36,16 @@
   </p>
   
   <!---- socket ------>
-  <script src="https://af289cd7.ngrok.io/socket.io/socket.io.js"></script>
+  <!-- <script src="https://af289cd7.ngrok.io/socket.io/socket.io.js"></script> -->
   
   <script>
+  let lib = document.createElement("script");
+  // lib.src = `http://${ location.host }/html/test.js`;
+  lib.src = `https://${ location.host }/socket.io/socket.io.js`;
+  // lib.onload = ()=>{}
+  document.body.append(lib);
+
+
   var localVideo = document.getElementById('local-video');
   var remoteVideo = document.getElementById('remote-video');
   var localStream = null;
@@ -51,7 +58,7 @@
   // create socket
   var socketReady = true; // false defaulte TODO:調査
   var port = 9001;
-  var socket = io.connect('https://af289cd7.ngrok.io:' + port + '/');
+  var socket = io.connect(`https://${location.host}:` + port + '/');
   // socket: channel connected
   socket.on('connect', onOpened)
         .on('message', onMessage);
