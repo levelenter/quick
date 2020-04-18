@@ -1,0 +1,15 @@
+{
+	"name" : "quick_sig",
+	"script" : "build/signaling.js",
+	"env" : {
+			"NODE_ENV" : "development"
+	},
+	"env_production" : {
+			"NODE_ENV" : "production",
+			"name" : "quick_sig"
+	},
+	"env_beta" : {
+			"NODE_ENV" : "betaversion",
+			"name" : "quick_beta_sig"
+	}
+}

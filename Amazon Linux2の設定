@@ -1,0 +1,12 @@
+Amazon Linux2の設定
+
+sudo yum install -y git
+
+# node repo add
+
+curl -sL https://rpm.nodesource.com/setup_11.x | bash -
+
+
+ sudo yum install nodejs npm 
+
+ 

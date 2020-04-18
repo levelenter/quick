@@ -3,10 +3,10 @@ import https from "https";
 import fs from "fs";
 
 // 秘密鍵とデジタル証明書ファイルを指定する
-const options = { 
-  key : fs.readFileSync('./out/server.key'),
-  cert: fs.readFileSync('./out/server.crt')
-};
+// const options = { 
+//   key : fs.readFileSync('./out/server.key'),
+//   cert: fs.readFileSync('./out/server.crt')
+// };
 
 const app = express();
 const path = require("path");
