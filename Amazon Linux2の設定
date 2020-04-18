@@ -4,9 +4,6 @@ sudo yum install -y git
 
 # node repo add
 
-curl -sL https://rpm.nodesource.com/setup_11.x | bash -
-
+sudo yum install https://rpm.nodesource.com/pub_11.x/el/7/x86_64/nodesource-release-el7-1.noarch.rpm
 
  sudo yum install nodejs npm 
-
- 
